@@ -53,3 +53,7 @@ button {
 button:hover {
     background-color: #165dbb;
 }
+
+#resultado {
+    margin-top: 20px;
+}
