@@ -1,4 +1,4 @@
-<!-- index.html -->
+<!-- index.php -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <h1>Registrarse</h1>
-        <form id="formulario" onsubmit="procesarFormulario(event)">
+        <form action="resultado.php" method="POST">
             <div class="input-group">
                 <label for="nombre">Nombre</label>
                 <input type="text" id="nombre" name="nombre" required>
@@ -29,18 +29,6 @@
             </div>
             <button type="submit">Enviar</button>
         </form>
-
-
-        <div id="resultado" style="display: none;">
-            <h2>Datos Ingresados:</h2>
-            <p><strong>Nombre:</strong> <span id="res-nombre"></span></p>
-            <p><strong>Apellido:</strong> <span id="res-apellido"></span></p>
-            <p><strong>Correo Electrónico:</strong> <span id="res-correo"></span></p>
-            <p><strong>Número de Teléfono:</strong> <span id="res-telefono"></span></p>
-            <button onclick="reiniciarFormulario()">Volver al formulario</button>
-        </div>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
